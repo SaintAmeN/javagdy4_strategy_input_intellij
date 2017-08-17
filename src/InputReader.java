@@ -1,3 +1,5 @@
+import strategies.IInputStrategy;
+
 public class InputReader {
     private IInputStrategy strategy;
 
@@ -9,5 +11,9 @@ public class InputReader {
     }
     public double requestDouble(){
         return strategy.getDouble();
+    }
+
+    public void setStrategy(IInputStrategy strategy) {
+        this.strategy = strategy;
     }
 }
