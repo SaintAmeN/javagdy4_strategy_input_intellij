@@ -1,0 +1,21 @@
+Dokończyć aplikację:
+Implementując wzorzec projektowy strategia stwórz aplikację która na początku pyta użytkownika o sposób ładowania danych do aplikacji, a następnie podmień strategię ładowania danych do programu. Istnieje klasa InputReader której instancję należy stworzyć na początku działania aplikacji (w mainie). Aplikacja powinna przyjmować komendę zmiany strategii:
+set_strategy file/random/std_in
+
+oraz pobierania kolejnych danych z wejścia:
+
+get_int - pobiera inta:
+		-- w przypadku strategii z pliku przyjmuje następnego inta z pliku
+		-- w przypadku std_in przyjmuje ze scannera
+		-- w przypadku random generuje randomowo liczbę i ją zwraca
+
+get_string - pobiera stringa ^ strategia działa tak samo
+get_double - pobiera double ^ strategia działa tak samo
+
+UWAGA! Jeśli np. w pliku nie ma danych, powinien się pojawić odpowiedni komunikat.
+
+
+Praca na gicie:
+- stwórzcie implementację maina razem LUB ZADANIE POWINNA REALIZOWAĆ 1 OSOBA Z GRUPY
+- podzielcie treść zadania w taki sposób aby zmiany na plikach sobie nie przeszkadzały (nie modyfikujcie tych samych plików) - tylko bez przesady. jeśli zmodyfikujecie pliki to nic sie nie stanie. Dzisiaj nauczymy się radzić sobie z konfliktami.
+- druga osoba powinna przejść na innego brancha i tam realizować swoje zadania
