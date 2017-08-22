@@ -27,10 +27,19 @@ public class Main {
             String command = sc.next();
             if (command.equals("getint")) {
                 System.out.println(reader.requestInt());
-            }else if (command.equals("getstring")) {
+            } else if (command.equals("getstring")) {
                 System.out.println(reader.requestString());
-            }else if (command.equals("getdouble")) {
+            } else if (command.equals("getdouble")) {
                 System.out.println(reader.requestDouble());
+            } else if (command.equals("setstrategy")) {
+                type = sc.next();
+                if (type.equals("random")) {
+                    reader.setStrategy(new RandomStrategy());
+                } else if (type.equals("stdin")) {
+                    reader.setStrategy(new StdInStrategy());
+                } else if (type.equals("file")) {
+                    reader.setStrategy(new FileStrategy());
+                }
             }
         }
 
