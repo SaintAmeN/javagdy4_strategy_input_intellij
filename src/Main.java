@@ -11,6 +11,8 @@ public class Main {
         System.out.println("Podaj typ wejścia: (1-random, 2-stdin, 3-plik)");
         InputReader reader = new InputReader();
 
+
+
         Scanner sc = new Scanner(System.in);
 
         String type = sc.next();
